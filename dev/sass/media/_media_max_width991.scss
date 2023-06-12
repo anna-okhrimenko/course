@@ -1,0 +1,16 @@
+@media screen and (max-width: 991px) {
+    header {
+        .header-container {
+            padding: 0 20px;
+            .header-nav {
+                gap: 34px;
+                a {
+                    font-size: 12px;
+                    line-height: 15px;
+                   
+                }
+            }
+        }
+    }
+
+}

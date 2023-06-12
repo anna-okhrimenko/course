@@ -1,0 +1,13 @@
+@media screen and (max-width: 750px) {
+    header {
+        .header-container {
+            .header-nav {
+                display: none;
+            }
+            .toggler {
+                display: block;
+            }
+
+        }
+    }
+}
