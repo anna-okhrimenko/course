@@ -1,0 +1,24 @@
+@media screen and (max-width: 576px) {
+
+    .secret-block {
+        flex-direction: row;
+
+        .img-side {
+            min-width: 84px;
+            height: auto;
+            border-radius: 20px 0 0 20px;
+            background-position: top;
+            background-size: auto 100% ;
+            
+        }
+
+        .text-side {
+            height: 120px;
+        }
+    }
+    .slick-list {
+        max-width: 336px;
+
+    }
+
+}

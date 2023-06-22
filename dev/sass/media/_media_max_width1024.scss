@@ -1,4 +1,18 @@
 @media screen and (max-width: 1024px) {
+    //tamplate//
+
+    .small-container {
+        width: 432px;
+    }
+
+    .btn {
+    
+        &.btn-primary {
+            padding: 14px 83px;
+        }
+    }
+
+
     header {
         .header-container {
             padding: 0 45px;
@@ -8,6 +22,43 @@
                     font-size: 15px;
                     line-height: 20px;
                    
+                }
+            }
+        }
+    }
+
+    .first-screen {
+        &-info {
+            .small-container {
+                padding: 77px 51px 38px 51px;
+            }
+            
+            h1 {
+                font-size: 34px;
+                line-height: 41px;
+            }
+            p {
+                margin-bottom: 36px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            h6 {
+                display: none;
+            }
+        }
+    
+        &-img {
+            
+            &_name {
+                padding: 27px 20px 20px 37px;
+                h5 {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
                 }
             }
         }

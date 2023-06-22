@@ -6,7 +6,8 @@
     &-info {
         background-image: url(assets/img/first-screen-bg.png);
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: top left;
+        background-size: 122%;
         .small-container {
             padding: 81px 88px 38px 77px;
         }
@@ -23,8 +24,7 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 26px;
-            display: flex;
-            align-items: center;
+            
         }
         h6 {
             margin-top: 91px;
@@ -42,7 +42,8 @@
         border-bottom-left-radius: 80px;
         background-image: url(assets/img/speecker-img.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center top;
+        background-size: 100%;
         background-color: #010101;
         &_name {
             background: rgba(255, 255, 255, 0.1);
