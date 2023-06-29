@@ -284,6 +284,57 @@ header .header-mobile_modal .modal-close {
   margin: 0 -13px;
 }
 
+.insta-busines {
+  color: #36353C;
+  margin-bottom: 10px;
+}
+.insta-busines_img {
+  background-image: url(assets/img/insta-garbuz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.insta-busines_img::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.insta-busines .small-container {
+  padding: 48px 10px 65px 60px;
+}
+.insta-busines .small-container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.insta-busines .small-container h6 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.insta-busines .small-container ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+.insta-busines .small-container ul li {
+  position: relative;
+  margin-bottom: 25px;
+  color: #36353C;
+  font-size: 16px;
+  line-height: 24px;
+}
+.insta-busines .small-container ul li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(assets/img/li-dots.png);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  left: -40px;
+  top: 10px;
+}
+
 @media screen and (min-width: 769px) {
   .secret-block:hover .img-side {
     width: 100%;
@@ -371,7 +422,7 @@ header .header-mobile_modal .modal-close {
     width: 100%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .secret-block {
     flex-direction: column;
     width: 194px;

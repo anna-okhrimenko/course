@@ -1,0 +1,53 @@
+.insta-busines {
+    color: #36353C;
+    margin-bottom: 10px;
+
+    &_img {
+        background-image: url(assets/img/insta-garbuz.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &_img::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.50);
+        width: 100%;
+    }
+    .small-container {
+        padding: 48px 10px 65px 60px;
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        h6 {
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            margin-left: 40px;
+            li {
+                position: relative;
+                margin-bottom: 25px;
+                color: #36353C;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        ul li::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(assets/img/li-dots.png);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        left: -40px;
+        top: 10px;
+        }
+    }
+}
