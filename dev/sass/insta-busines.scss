@@ -6,6 +6,7 @@
         background-image: url(assets/img/insta-garbuz.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
 
     &_img::before {
@@ -15,10 +16,15 @@
     }
     .small-container {
         padding: 48px 10px 65px 60px;
+        .title {
+            margin-bottom: 40px;
+            .title-img {
+                display: none;
+            }
+        }
         h2 {
             font-size: 30px;
             font-weight: 600;
-            margin-bottom: 40px;
         }
         h6 {
             font-size: 18px;

@@ -241,6 +241,7 @@ header .header-mobile_modal .modal-close {
   margin: 21px 0 60px 0;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
 }
 
 .secret-block {
@@ -292,6 +293,7 @@ header .header-mobile_modal .modal-close {
   background-image: url(assets/img/insta-garbuz.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .insta-busines_img::before {
   content: "";
@@ -301,10 +303,15 @@ header .header-mobile_modal .modal-close {
 .insta-busines .small-container {
   padding: 48px 10px 65px 60px;
 }
+.insta-busines .small-container .title {
+  margin-bottom: 40px;
+}
+.insta-busines .small-container .title .title-img {
+  display: none;
+}
 .insta-busines .small-container h2 {
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 40px;
 }
 .insta-busines .small-container h6 {
   font-size: 18px;
@@ -400,6 +407,22 @@ header .header-mobile_modal .modal-close {
     font-size: 14px;
     line-height: 17px;
   }
+  .insta-busines .left-block,
+  .insta-busines .right-block {
+    width: 50%;
+  }
+  .insta-busines .small-container {
+    padding: 25px 10px 25px 30px;
+  }
+  .insta-busines .small-container h2 {
+    font-size: 28px;
+  }
+  .insta-busines .small-container ul {
+    margin-left: 30px;
+  }
+  .insta-busines .small-container ul li {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 991px) {
   header .header-container {
@@ -420,6 +443,90 @@ header .header-mobile_modal .modal-close {
   }
   .small-container {
     width: 100%;
+  }
+  .insta-busines {
+    color: #36353C;
+    margin-bottom: 10px;
+  }
+  .insta-busines .left-block {
+    display: none;
+  }
+  .insta-busines .small-container {
+    padding: 0;
+  }
+  .insta-busines .small-container .title {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: stretch;
+    box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+  }
+  .insta-busines .small-container .title h2 {
+    padding: 41px 50px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .insta-busines .small-container .title .title-img {
+    width: 247px;
+    flex-shrink: 0;
+    display: block;
+    position: relative;
+    background-image: url(assets/img/insta-garbuz-mini.png);
+  }
+  .insta-busines .small-container .title .title-img::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+  .insta-busines .small-container .title .title-img p {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+  }
+  .insta-busines .small-container .title .title-img p span {
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .insta-busines .small-container .insta-body {
+    padding: 35px 50px;
+  }
+  .insta-busines .small-container h6 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .insta-busines .small-container ul {
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  .insta-busines .small-container ul li {
+    position: relative;
+    margin-bottom: 25px;
+    color: #36353C;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .insta-busines .small-container ul li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(assets/img/li-dots.png);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    left: -40px;
+    top: 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -502,6 +609,9 @@ header .header-mobile_modal .modal-close {
     text-align: end;
     max-width: fit-content;
     border-bottom-left-radius: 0;
+  }
+  .insta-busines .right-block {
+    height: auto;
   }
 }
 @media screen and (max-width: 576px) {
