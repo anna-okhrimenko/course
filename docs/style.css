@@ -294,6 +294,7 @@ header .header-mobile_modal .modal-close {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .insta-busines_img::before {
   content: "";
@@ -312,6 +313,25 @@ header .header-mobile_modal .modal-close {
 .insta-busines .small-container h2 {
   font-size: 30px;
   font-weight: 600;
+}
+.insta-busines .small-container .subtitle {
+  display: none;
+}
+.insta-busines .small-container .subtitle p {
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: rgba(30, 29, 32, 0.5019607843);
+  color: white;
+  box-shadow: 0px 0px 8.3199996948px 0px #FFF inset;
+}
+.insta-busines .small-container .subtitle p span {
+  margin-left: 13px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .insta-busines .small-container h6 {
   font-size: 18px;
@@ -342,6 +362,72 @@ header .header-mobile_modal .modal-close {
   top: 10px;
 }
 
+.countdown-block .left-block {
+  background: #1E1D20;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.countdown-block .left-block h6 {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.countdown-block .left-block ul#countdown {
+  display: flex;
+  margin: 0 auto;
+  padding: 15px 0 20px 0;
+  color: #ffffff;
+  overflow: hidden;
+  font-weight: 400;
+  list-style: none;
+}
+.countdown-block .left-block ul#countdown li {
+  margin: 0 10px 0 0;
+  padding: 0;
+  font-size: 36px;
+  text-align: center;
+}
+.countdown-block .left-block ul#countdown li .label {
+  color: #adafb2;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.countdown-block .left-block ul#countdown .number {
+  margin-bottom: 5px;
+  padding: 25px;
+  border-radius: 80px;
+  background: rgba(54, 53, 60, 0.5);
+}
+.countdown-block .right-block {
+  padding: 35px 27px 60px 60px;
+  box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+.countdown-block .right-block .course-price {
+  color: #36353C;
+}
+.countdown-block .right-block .course-price h6 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.countdown-block .right-block .course-price h5 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.countdown-block .right-block .course-price p {
+  color: rgba(54, 53, 60, 0.5019607843);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration-line: line-through;
+}
+
 @media screen and (min-width: 769px) {
   .secret-block:hover .img-side {
     width: 100%;
@@ -361,6 +447,26 @@ header .header-mobile_modal .modal-close {
 @media screen and (max-width: 1199px) {
   header .header-container {
     padding: 0 70px;
+  }
+  .countdown-block .left-block ul#countdown li {
+    font-size: 30px;
+  }
+  .countdown-block .left-block ul#countdown .number {
+    padding: 23px;
+  }
+  .countdown-block .right-block {
+    flex-direction: column;
+  }
+  .countdown-block .right-block .course-price {
+    margin-bottom: 21px;
+    text-align: center;
+  }
+  .countdown-block .right-block .course-price .price {
+    display: flex;
+    align-items: center;
+  }
+  .countdown-block .right-block .course-price .price h5 {
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -423,6 +529,29 @@ header .header-mobile_modal .modal-close {
   .insta-busines .small-container ul li {
     margin-bottom: 20px;
   }
+  .countdown-block .left-block ul#countdown li {
+    font-size: 23px;
+  }
+  .countdown-block .left-block ul#countdown li .label {
+    font-size: 16px;
+  }
+  .countdown-block .left-block ul#countdown .number {
+    padding: 27px;
+  }
+  .countdown-block .right-block {
+    flex-direction: column;
+  }
+  .countdown-block .right-block .course-price {
+    margin-bottom: 21px;
+    text-align: center;
+  }
+  .countdown-block .right-block .course-price .price {
+    display: flex;
+    align-items: center;
+  }
+  .countdown-block .right-block .course-price .price h5 {
+    margin-right: 20px;
+  }
 }
 @media screen and (max-width: 991px) {
   header .header-container {
@@ -435,31 +564,31 @@ header .header-mobile_modal .modal-close {
     font-size: 12px;
     line-height: 15px;
   }
-  .column-block .left-block {
+  .first-screen .column-block .left-block {
     width: 432px;
   }
-  .column-block .right-block {
+  .first-screen .column-block .right-block {
     width: 100%;
   }
   .small-container {
     width: 100%;
   }
-  .insta-busines {
-    color: #36353C;
-    margin-bottom: 10px;
-  }
   .insta-busines .left-block {
     display: none;
+  }
+  .insta-busines .right-block {
+    width: 100%;
   }
   .insta-busines .small-container {
     padding: 0;
   }
   .insta-busines .small-container .title {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     align-items: stretch;
     box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.1);
     justify-content: space-between;
+    min-height: 120px;
   }
   .insta-busines .small-container .title h2 {
     padding: 41px 50px;
@@ -472,6 +601,8 @@ header .header-mobile_modal .modal-close {
     display: block;
     position: relative;
     background-image: url(assets/img/insta-garbuz-mini.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .insta-busines .small-container .title .title-img::before {
     content: "";
@@ -568,13 +699,6 @@ header .header-mobile_modal .modal-close {
     width: 100%;
     display: flex;
   }
-  .column-block .right-block {
-    height: 301px;
-    align-items: end;
-  }
-  .column-block .left-block {
-    justify-content: center;
-  }
   .btn.btn-primary {
     width: 100%;
   }
@@ -583,6 +707,18 @@ header .header-mobile_modal .modal-close {
   }
   header .header-container .toggler {
     display: block;
+  }
+  .first-screen .left-block,
+  .first-screen .right-block {
+    width: 100%;
+    display: flex;
+  }
+  .first-screen .right-block {
+    height: 301px;
+    align-items: end;
+  }
+  .first-screen .left-block {
+    justify-content: center;
   }
   .first-screen-info .small-container {
     padding: 30px 20px;
@@ -630,6 +766,35 @@ header .header-mobile_modal .modal-close {
   }
   .slick-list {
     max-width: 336px;
+  }
+  .insta-busines .small-container .title {
+    min-height: 120px;
+    flex-direction: row-reverse;
+  }
+  .insta-busines .small-container .title h2 {
+    padding: 27px 12px 27px 20px;
+    font-size: 18px;
+  }
+  .insta-busines .small-container .title .title-img {
+    width: 100px;
+    background-image: url(assets/img/pampkin.png);
+  }
+  .insta-busines .small-container .title .title-img p {
+    display: none;
+  }
+  .insta-busines .small-container .subtitle {
+    display: block;
+  }
+  .insta-busines .small-container h6 {
+    text-align: center;
+  }
+  .insta-busines .small-container ul {
+    list-style-type: none;
+    margin-left: 15px;
+  }
+  .insta-busines .small-container ul li {
+    margin-bottom: 20px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

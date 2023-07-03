@@ -88,6 +88,37 @@
             }
         }
     }
+
+    .countdown-block {
+        .left-block {
+            ul#countdown {
+                li {
+                    font-size: 23px;
+                    .label {
+                        font-size: 16px;
+                    }
+                }
+                .number {
+                    padding: 27px;
+                }
+            }
+        }
+
+        .right-block {
+            flex-direction: column;
+            .course-price {
+                margin-bottom: 21px;
+                text-align: center;
+                .price {
+                    display: flex;
+                    align-items: center;
+                    h5 {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

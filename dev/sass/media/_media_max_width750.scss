@@ -11,16 +11,6 @@
             width: 100%;
             display: flex;
         }
-
-        .right-block {
-            height: 301px;
-            align-items: end;
-        }
-        
-        .left-block {
-            
-            justify-content: center;
-        }
     }
 
     .btn.btn-primary {
@@ -40,6 +30,23 @@
     }
 
     .first-screen {
+        
+        .left-block,
+        .right-block {
+            width: 100%;
+            display: flex;
+        }
+
+        .right-block {
+            height: 301px;
+            align-items: end;
+        }
+        
+        .left-block {
+            
+            justify-content: center;
+        }
+       
         &-info {
             
             .small-container {

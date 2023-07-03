@@ -21,4 +21,40 @@
 
     }
 
+    .insta-busines {
+        .small-container {
+            .title {
+                min-height: 120px;
+                flex-direction: row-reverse;
+                
+                h2 {
+                    padding: 27px 12px 27px 20px;
+                    font-size: 18px;
+                }
+                .title-img {
+                    width: 100px;
+                    background-image: url(assets/img/pampkin.png);
+                    
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            .subtitle {
+                display: block;
+            }
+            h6 {
+                text-align: center;
+            }
+            ul {
+                list-style-type: none;
+                margin-left: 15px;
+                li {
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
+

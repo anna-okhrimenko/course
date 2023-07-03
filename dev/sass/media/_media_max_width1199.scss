@@ -6,4 +6,32 @@
         }
 
     }
+
+    .countdown-block {
+        .left-block {
+            ul#countdown {
+                li {
+                    font-size: 30px;
+                }
+                .number {
+                    padding: 23px;
+                }
+            }
+        }
+
+        .right-block {
+            flex-direction: column;
+            .course-price {
+                margin-bottom: 21px;
+                text-align: center;
+                .price {
+                    display: flex;
+                    align-items: center;
+                    h5 {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
 }

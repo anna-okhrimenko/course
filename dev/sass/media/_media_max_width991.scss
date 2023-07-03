@@ -13,37 +13,40 @@
         }
     }
 
-    .column-block {
-        .left-block {
-            width: 432px;
+    .first-screen {
+        .column-block {
+            .left-block {
+                width: 432px;
+            }
+            
+            .right-block {
+                width: 100%;
+            }
         }
-        
-        .right-block {
-            width: 100%;
-        }
-    }
-    
-    
+    }   
+
     .small-container {
         width: 100%;
     }
 
 
     .insta-busines {
-        color: #36353C;
-        margin-bottom: 10px;
-    
         .left-block {
             display: none;
+        }
+        
+        .right-block {
+            width: 100%;
         }
         .small-container {
             padding: 0;
             .title {
                 display: flex;
-                margin-bottom: 40px;
+                margin-bottom: 0;
                 align-items: stretch;
                 box-shadow: 20px 0 20px 0 rgba(0, 0, 0, 0.1);
                 justify-content: space-between;
+                min-height: 120px;
 
                 h2 {
                     padding: 41px 50px;
@@ -56,6 +59,8 @@
                     display: block;
                     position: relative;
                     background-image: url(assets/img/insta-garbuz-mini.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     
                     &::before {
                         content: "";
