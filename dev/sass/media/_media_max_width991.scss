@@ -124,4 +124,19 @@
         }
     }
 
+
+    .countdown-block {
+        .left-block {
+            ul#countdown {
+                li .label {
+                    font-size: 14px;
+                }
+                .number {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
 }

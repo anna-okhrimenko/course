@@ -386,10 +386,17 @@ header .header-mobile_modal .modal-close {
   list-style: none;
 }
 .countdown-block .left-block ul#countdown li {
-  margin: 0 10px 0 0;
+  margin: 0 17px 0px 0;
   padding: 0;
   font-size: 36px;
   text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.countdown-block .left-block ul#countdown li:last-child {
+  margin: 0 0 10px 0;
 }
 .countdown-block .left-block ul#countdown li .label {
   color: #adafb2;
@@ -397,10 +404,14 @@ header .header-mobile_modal .modal-close {
   text-transform: uppercase;
 }
 .countdown-block .left-block ul#countdown .number {
-  margin-bottom: 5px;
-  padding: 25px;
+  width: 80px;
+  height: 80px;
   border-radius: 80px;
   background: rgba(54, 53, 60, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .countdown-block .right-block {
   padding: 35px 27px 60px 60px;
@@ -658,6 +669,13 @@ header .header-mobile_modal .modal-close {
     height: 15px;
     left: -40px;
     top: 10px;
+  }
+  .countdown-block .left-block ul#countdown li .label {
+    font-size: 14px;
+  }
+  .countdown-block .left-block ul#countdown .number {
+    width: 60px;
+    height: 60px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -22,10 +22,17 @@
             list-style: none;
             
             li {
-                margin: 0 10px 0 0;
+                margin: 0 17px 0px 0;
                 padding: 0;
                 font-size: 36px;
                 text-align: center;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &:last-child {
+                    margin: 0 0 10px 0;
+                }
                 
                 .label {
                     color: #adafb2;
@@ -34,10 +41,14 @@
                 }
             }
             .number {
-                margin-bottom: 5px;
-                padding: 25px;
+                width: 80px;
+                height: 80px;
                 border-radius: 80px;
-                background: rgba(54, 53, 60, 0.50);
+                background: rgba(54, 53, 60, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
             }
         }
     }
