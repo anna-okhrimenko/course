@@ -362,6 +362,9 @@ header .header-mobile_modal .modal-close {
   top: 10px;
 }
 
+.countdown-block {
+  margin-bottom: 60px;
+}
 .countdown-block .left-block {
   background: #1E1D20;
   justify-content: center;
@@ -437,6 +440,56 @@ header .header-mobile_modal .modal-close {
   font-size: 20px;
   font-weight: 400;
   text-decoration-line: line-through;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 60px;
+}
+.course-info_circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(assets/img/circle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+  width: 227px;
+  height: 234px;
+}
+.course-info_circle h5 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #63656B;
+}
+.course-info h6 {
+  color: #63656B;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.course-info_square {
+  padding: 49px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #FFF;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.course-info_square span {
+  color: #63656B;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 769px) {
@@ -677,6 +730,12 @@ header .header-mobile_modal .modal-close {
     width: 60px;
     height: 60px;
   }
+  .course-info {
+    justify-content: space-around;
+  }
+  .course-info_square {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .secret-block {
@@ -766,6 +825,35 @@ header .header-mobile_modal .modal-close {
   }
   .insta-busines .right-block {
     height: auto;
+  }
+  .course-info {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px 85px;
+    border-radius: 20px;
+    box-shadow: 12px -14px 0px 0px #4EDF3C, 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+  }
+  .course-info_circle {
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+    background: #FFF;
+    width: auto;
+    height: auto;
+  }
+  .course-info_circle h5 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #63656B;
+  }
+  .course-info h6 {
+    color: #63656B;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }
 @media screen and (max-width: 576px) {

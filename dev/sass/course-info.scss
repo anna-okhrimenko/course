@@ -1,0 +1,56 @@
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 60px;
+
+
+    &_circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(assets/img/circle.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 20px;
+        width: 227px;
+        height: 234px;
+       
+        h5 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: #63656B;
+        }
+
+    }
+    h6 {
+        color: #63656B;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &_square {
+        padding: 49px 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #FFF;
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1) ;
+
+        span {
+            color: #63656B;
+            text-align: center;
+            font-size: 64px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+}

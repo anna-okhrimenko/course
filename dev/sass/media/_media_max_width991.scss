@@ -139,4 +139,12 @@
         }
     }
 
+    .course-info {
+        justify-content: space-around;
+        &_square {
+            display: none;
+        }
+    
+    }
+
 }
