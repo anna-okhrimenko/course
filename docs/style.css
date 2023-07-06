@@ -56,6 +56,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+.btn:active {
+  box-shadow: inset -2px 1px 15px 16px rgba(0, 0, 0, 0.2), inset 4px 1px 20px 16px rgba(0, 0, 0, 0.2);
+}
 .btn.btn-primary {
   padding: 19px 108px;
 }
@@ -490,6 +493,87 @@ header .header-mobile_modal .modal-close {
   font-size: 64px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.for-whom_course {
+  justify-content: end;
+}
+.for-whom_course-info {
+  padding: 20px 60px 20px 100px;
+}
+.for-whom_course-info h5 {
+  color: #36353C;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.for-whom_course-info ul {
+  list-style: none;
+}
+.for-whom_course-info ul li {
+  position: relative;
+  color: #36353C;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+.for-whom_course-info ul li::before {
+  content: "";
+  background-color: red;
+  mask-image: url(assets/img/li-dots.svg);
+  -webkit-mask-image: url(assets/img/li-dots.svg);
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -12px;
+  top: 6px;
+}
+.for-whom_course-info ul li:nth-child(5n+1)::before {
+  background-color: #F9B3BF;
+}
+.for-whom_course-info ul li:nth-child(5n+2)::before {
+  background-color: #90AE7B;
+}
+.for-whom_course-info ul li:nth-child(5n+3)::before {
+  background-color: #DC247C;
+}
+.for-whom_course-info ul li:nth-child(5n+4)::before {
+  background-color: #2FA84F;
+}
+.for-whom_course-info ul li:nth-child(5n+5)::before {
+  background-color: #5D86D6;
+}
+.for-whom_course-banner {
+  position: relative;
+  min-width: 560px;
+  padding: 105px 60px 65px;
+  background-image: url(assets/img/insta-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.for-whom_course-banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+}
+.for-whom_course-banner .banner-content {
+  position: relative;
+}
+.for-whom_course-banner .banner-content h2 {
+  max-width: 255px;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 45px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 769px) {

@@ -1,0 +1,99 @@
+.for-whom_course {
+    justify-content: end;
+    &-info {
+        padding: 20px 60px 20px 100px;
+
+        h5 {
+            color: #36353C;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        ul {
+            list-style: none;
+            li {
+                position: relative;
+                color: #36353C;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 25px;
+                padding-left: 20px;
+                &::before {
+                    content: "";
+                    background-color: red;
+                    mask-image: url(assets/img/li-dots.svg);
+                    -webkit-mask-image: url(assets/img/li-dots.svg);
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    left: -12px;
+                    top: 6px;
+                }
+                &:nth-child(5n+1) {
+                    &::before {
+                        background-color: #F9B3BF;
+
+                    }
+                }
+                &:nth-child(5n+2) {
+                    &::before {
+                        background-color: #90AE7B;
+
+                    }
+                }
+                &:nth-child(5n+3) {
+                    &::before {
+                        background-color: #DC247C;
+
+                    }
+                }
+                &:nth-child(5n+4) {
+                    &::before {
+                        background-color: #2FA84F;
+
+                    }
+                }
+                &:nth-child(5n+5) {
+                    &::before {
+                        background-color: #5D86D6;
+
+                    }
+                }
+            }
+        }
+    }
+
+    &-banner {
+        position: relative;
+        min-width: 560px;
+        padding: 105px 60px 65px;
+        background-image: url(assets/img/insta-bg-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            backdrop-filter: blur(4px);
+        }
+        .banner-content {
+            position: relative;
+            h2 {
+                max-width: 255px;
+                color: #FFF;
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 45px;
+                z-index: 1;
+            }
+        }
+        
+    }
+}
