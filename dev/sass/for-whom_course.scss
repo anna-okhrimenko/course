@@ -1,5 +1,6 @@
 .for-whom_course {
     justify-content: end;
+    margin-bottom: 30px;
     &-info {
         padding: 20px 60px 20px 100px;
 
@@ -69,6 +70,7 @@
     &-banner {
         position: relative;
         min-width: 560px;
+        max-height: 500px;
         padding: 105px 60px 65px;
         background-image: url(assets/img/insta-bg-img.png);
         background-repeat: no-repeat;
@@ -93,6 +95,9 @@
                 margin-bottom: 45px;
                 z-index: 1;
             }
+        }
+        .banner-img {
+            display: none;
         }
         
     }

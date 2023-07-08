@@ -119,6 +119,13 @@
             }
         }
     }
+
+    .for-whom_course {
+        &-banner {
+            min-width: 460px;
+            max-height: 470px;
+        }
+    }
 }
 
 

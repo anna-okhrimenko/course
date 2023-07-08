@@ -147,4 +147,43 @@
     
     }
 
+    .for-whom_course {
+        flex-direction: column !important; 
+        &-info {
+            padding: 20px 50px 20px 50px;
+            h5 {
+                font-size: 20px;
+            }
+        }
+        &-banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(30, 29, 32, 1);
+            padding: 0;
+            &::before {
+                content: none;
+                
+            }
+            .banner-content {
+                padding: 35px 43px 35px 44px;
+                text-align: center;
+                flex-shrink: 4;
+                h2 {
+                    max-width: 100%;
+                    font-size: 32px;
+                    margin-bottom: 30px;
+                }
+            }
+            .banner-img {
+                display: block;
+                height: auto; 
+                flex-shrink: 1;
+                img {
+                    width: 100%;
+                }
+            } 
+        }
+    }
+
 }

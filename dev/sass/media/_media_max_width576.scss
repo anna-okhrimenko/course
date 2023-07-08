@@ -56,5 +56,43 @@
             }
         }
     }
+
+    .for-whom_course {
+        &-info {
+            h5 {
+                text-align: center;
+            }
+            ul li {
+                font-size: 14px;
+            }
+        }
+        &-banner {
+            min-width: auto;
+            min-height: auto;
+            background-image: url(assets/img/insta-bg-img-mob.png);
+            padding: 0;
+            background-repeat: no-repeat;
+            background-position: top right -62px;
+            background-size: contain;
+            background-color: #0b1d35;
+            &::before {
+                content: "";
+                
+            }
+
+            .banner-content {
+                padding: 40px 20px 34px;
+                max-width: 60%;
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+            }
+            
+            .banner-img {
+                display: none;
+            } 
+        }
+    }
 }
 
