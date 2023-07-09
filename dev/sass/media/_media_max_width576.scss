@@ -1,4 +1,8 @@
 @media screen and (max-width: 576px) {
+    .btn.btn-primary {
+        padding: 12px 72px;
+        font-size: 14px;
+    }
 
     .secret-block {
         flex-direction: row;
@@ -82,7 +86,8 @@
 
             .banner-content {
                 padding: 40px 20px 34px;
-                max-width: 60%;
+                max-width: 70%;
+                text-align: start;
                 h2 {
                     font-size: 18px;
                     margin-bottom: 20px;

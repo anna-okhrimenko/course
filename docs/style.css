@@ -22,7 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .container {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .column-block {
@@ -589,6 +589,17 @@ header .header-mobile_modal .modal-close {
   border-radius: 0 80px 0 80px;
   box-shadow: 25px -10px 0px -11px hsla(113, 72%, 55%, 0.5), 0px 14px 9px -10px rgba(0, 0, 0, 0.1), 0px -6px 13px -3px rgba(0, 0, 0, 0.1);
 }
+.teacher-course .single-teacher .teacher-img {
+  min-width: 440px;
+  overflow: hidden;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+.teacher-course .single-teacher .teacher-img picture {
+  width: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
 .teacher-course .single-teacher .teacher-info {
   color: #36353C;
   padding: 100px 50px 60px 60px;
@@ -604,21 +615,14 @@ header .header-mobile_modal .modal-close {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+.teacher-course .single-teacher .teacher-info .teacher-mob-img {
+  display: none;
+}
 .teacher-course .single-teacher .teacher-info p {
   color: #373F41;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-}
-.teacher-course .single-teacher .teacher-img {
-  min-width: 440px;
-  overflow: hidden;
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 80px;
-}
-.teacher-course .single-teacher .teacher-img img {
-  width: 100%;
-  transform: scale(1.1);
 }
 
 @media screen and (min-width: 769px) {
@@ -909,6 +913,18 @@ header .header-mobile_modal .modal-close {
   .for-whom_course-banner .banner-img img {
     width: 100%;
   }
+  .teacher-course {
+    margin-bottom: 30px;
+  }
+  .teacher-course .single-teacher .teacher-img {
+    min-width: 370px;
+  }
+  .teacher-course .single-teacher .teacher-info {
+    padding: 40px 36px 36px;
+  }
+  .teacher-course .single-teacher .teacher-info p {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 768px) {
   .secret-block {
@@ -956,6 +972,25 @@ header .header-mobile_modal .modal-close {
   }
   .for-whom_course-banner .banner-img img {
     width: 100%;
+  }
+  .teacher-course .single-teacher .teacher-img {
+    min-width: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .teacher-course .single-teacher .teacher-info {
+    padding: 40px 36px 36px;
+  }
+  .teacher-course .single-teacher .teacher-info h2 {
+    font-size: 24px;
+  }
+  .teacher-course .single-teacher .teacher-info h5 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .teacher-course .single-teacher .teacher-info p {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -1048,8 +1083,35 @@ header .header-mobile_modal .modal-close {
     font-weight: 400;
     text-transform: uppercase;
   }
+  .teacher-course .single-teacher {
+    border-radius: 0 40px 0 40px;
+  }
+  .teacher-course .single-teacher .teacher-img {
+    display: none;
+  }
+  .teacher-course .single-teacher .teacher-info {
+    padding: 0 20px 40px;
+  }
+  .teacher-course .single-teacher .teacher-info .teacher-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 19px;
+    margin: 0 0 20px -19px;
+  }
+  .teacher-course .single-teacher .teacher-info .teacher-name h2 {
+    margin-top: 28px;
+    font-size: 18px;
+  }
+  .teacher-course .single-teacher .teacher-info .teacher-mob-img {
+    display: block;
+  }
 }
 @media screen and (max-width: 576px) {
+  .btn.btn-primary {
+    padding: 12px 72px;
+    font-size: 14px;
+  }
   .secret-block {
     flex-direction: row;
   }
@@ -1116,7 +1178,8 @@ header .header-mobile_modal .modal-close {
   }
   .for-whom_course-banner .banner-content {
     padding: 40px 20px 34px;
-    max-width: 60%;
+    max-width: 70%;
+    text-align: start;
   }
   .for-whom_course-banner .banner-content h2 {
     font-size: 18px;

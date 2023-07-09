@@ -125,5 +125,30 @@
     
     }
 
-    
+    .teacher-course {
+        .single-teacher {
+            border-radius: 0 40px 0 40px;
+            .teacher-img {
+                display: none;
+            }
+             
+            .teacher-info {
+                padding: 0 20px 40px;
+                .teacher-name {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 19px;
+                    margin: 0 0 20px -19px;
+                    h2 {
+                        margin-top: 28px;
+                        font-size: 18px;
+                    }
+                }
+                .teacher-mob-img {
+                    display: block;
+                }
+            }
+        }
+    }
 }

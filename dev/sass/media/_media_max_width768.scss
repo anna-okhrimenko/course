@@ -57,5 +57,30 @@
         }
     }
 
+    .teacher-course {
+        .single-teacher {
+            .teacher-img {
+                min-width: 245px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+             
+            .teacher-info {
+                padding: 40px 36px 36px;
+                h2 {
+                    font-size: 24px;
+                }
+                h5 {
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
     
 }
