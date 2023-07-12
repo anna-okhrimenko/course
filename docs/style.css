@@ -25,6 +25,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding: 0 15px;
 }
 
+.container-big {
+  max-width: 1460;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .column-block {
   display: flex;
   align-items: stretch;
@@ -623,6 +629,85 @@ header .header-mobile_modal .modal-close {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+}
+
+.taryf {
+  background-image: url(assets/img/taryf-bg.png);
+  padding: 60px 10px 40px;
+  margin: 0 auto 40px;
+}
+.taryf h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 628px;
+  margin: 0 auto 40px;
+}
+.taryf-block {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  color: #FFF;
+}
+.taryf-block .taryf-card {
+  padding: 50px 30px 37px;
+  max-width: 380px;
+  border-radius: 40px;
+  background: rgba(36, 35, 41, 0.5);
+  backdrop-filter: blur(25px);
+}
+.taryf-block .taryf-card .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.taryf-block .taryf-card h4 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.taryf-block .taryf-card ul {
+  margin-bottom: 20px;
+  padding-left: 30px;
+  list-style: none;
+}
+.taryf-block .taryf-card ul li {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: white;
+}
+.taryf-block .taryf-card ul li::before {
+  content: "";
+  position: absolute;
+  background-image: url(assets/img/taryf-dots.svg);
+  width: 15px;
+  height: 11px;
+  top: 7px;
+  left: -28px;
+}
+.taryf-block .taryf-card button {
+  width: 100%;
+}
+.taryf-block .basic ul li:nth-last-child(-n+3) {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.taryf-block .basic ul li:nth-last-child(-n+3)::before {
+  content: none;
+}
+.taryf-block .classic ul li:last-child {
+  position: relative;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.taryf-block .classic ul li:last-child::before {
+  content: none;
 }
 
 @media screen and (min-width: 769px) {
