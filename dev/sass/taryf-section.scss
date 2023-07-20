@@ -1,8 +1,21 @@
 .taryf {
     background-image: url(assets/img/taryf-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 60px 10px 40px; 
     margin: 0 auto 40px;
+    position: relative;
+    &::before {
+        content: "";
+        background: rgba(30, 29, 32, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     h2 {
+        position: relative;
         color: #FFF;
         text-align: center;
         font-size: 36px;
@@ -11,13 +24,16 @@
         margin: 0 auto 40px;
     }
     &-block {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        color: #FFF;
         gap: 30px;
         justify-content: center;
         color: #FFF;
 
         .taryf-card {
-            padding: 50px 30px 37px;
+            padding: 40px 30px 37px;
+            margin: 0 auto;
             max-width: 380px;
             border-radius: 40px;
             background: rgba(36, 35, 41, 0.50);
@@ -26,23 +42,30 @@
             .price {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: start;
                 font-size: 30px;
                 font-weight: 500;
-                line-height: 40px;
-                margin-bottom: 15px;
-            }
-            h4 {
-                font-size: 30px;
-                font-weight: 400;
-                text-transform: uppercase;
-                margin-bottom: 30px;
+                .price-title {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: start;
+                    img {
+                        max-height: 15px;
+                        margin-bottom: 30px;
+                    }
+                }
+                h4 {
+                    font-size: 30px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                }
             }
             ul {
                 margin-bottom: 20px;
-                padding-left: 30px;
                 list-style: none;
                 li {
+                    padding-left: 30px;
                     position: relative;
                     font-size: 16px;
                     font-weight: 400;
@@ -55,7 +78,7 @@
                         width: 15px;
                         height: 11px;
                         top: 7px;
-                        left: -28px;
+                        left: -2px;
                     }
                     
                 }
@@ -66,20 +89,34 @@
             
         }
         .basic {
-            ul li:nth-last-child(-n+3) {
+            ul li:nth-last-child(-n+4) {
                 color: hsla(0, 0%, 100%, 0.5);
                 &::before {
                     content: none;
                 }
             }
+            ul li:last-child {
+                padding-left: 0;
+            }
         }
         .classic {
-            ul li:last-child {
+            ul li:nth-last-child(-n+2) {
                 position: relative;
                 color: hsla(0, 0%, 100%, 0.5);
                 &::before {
                     content: none;
-                    
+                }
+            }
+            ul li:last-child {
+                padding-left: 0;
+            }
+        }
+        .pro {
+            
+            ul li:last-child {
+                padding-left: 0;
+                &::before {
+                    content: none;
                 }
             }
         }

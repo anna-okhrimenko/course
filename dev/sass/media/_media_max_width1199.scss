@@ -40,4 +40,18 @@
             min-width: 500px;
         }
     }
+
+    .taryf {
+        &-block {
+            gap: 15px;
+            .taryf-card {
+                padding: 40px 20px 37px;
+                max-width: 320px;
+
+                ul li {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }

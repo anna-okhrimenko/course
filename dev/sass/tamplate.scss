@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    ::selection {
+        color: #3215db;
+        background-color: #ebf04e;
+    }
 }
 
 .container {
@@ -11,7 +15,6 @@
     padding: 0 15px;
 }
 .container-big {
-    max-width: 1460;
     margin: 0 auto;
     padding: 0 10px;
 

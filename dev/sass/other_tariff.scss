@@ -1,0 +1,70 @@
+.other_tariff {
+    background-image: url(assets/img/other_tariff-bg.png);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 64px 10px 30px;
+    &-card {
+        border-radius: 40px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+        max-width: 585px;
+        overflow: hidden;
+        .card-title {
+            position: relative;
+            padding: 30px 50px;
+            background-image: url(assets/img/other_tariff-cardbg.png);
+            background-size: contain;
+            overflow: hidden;
+            &::before {
+                content: "";
+                background: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                position: absolute;
+                display: block;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+            h4 {
+                position: relative;
+                color: #FFF;
+                font-size: 28px;
+                font-weight: 500;
+            }
+            
+        }
+        .card-body {
+            padding: 40px 36px;
+            color: #63656B;
+
+            h6 {
+                margin-bottom: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            ul li {
+                margin-bottom: 15px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-left: 25px;
+            }
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px 43px;
+            h5 {
+                color: #36353C;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 40px;
+            }
+            .btn {
+                padding: 14px 86px;
+            }
+        }
+    }
+}

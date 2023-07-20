@@ -126,6 +126,34 @@
             max-height: 470px;
         }
     }
+
+    .taryf {
+        h2 {
+            font-size: 32px;
+        }
+        &-block {
+            .taryf-card {
+                padding: 40px 30px 27px;
+                .price {
+                    font-size: 28px;
+                    .price-title {
+                        img {
+                            margin-bottom: 25px;
+                        }
+                    }
+                    h4 {
+                        font-size: 28px;
+                        margin-bottom: 25px;
+                    }
+                }
+                ul {
+                    li {
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

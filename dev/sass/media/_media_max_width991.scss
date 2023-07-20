@@ -202,4 +202,67 @@
         }
     }
 
+    .taryf {
+        h2 {
+            font-size: 24px;
+        }
+        &-block {
+            
+            grid-template-columns: minmax(min-content, 366px) minmax(min-content, 366px);
+            grid-template-columns: minmax(min-content, 366px) minmax(min-content, 366px);
+            grid-template-rows: 1fr min-content;
+            gap: 10px;
+            
+            .taryf-card {
+                max-width: 366px;
+                .price {
+                    .price-title {
+                        flex-direction: row;
+                        align-items: center;
+                        img {
+                            margin-bottom: 25px;
+                            max-height: 8px;
+                        }
+                    }
+                    h4 {
+                        font-size: 24px;
+                        margin-right: 10px;
+                        margin-bottom: 25px;
+                    }
+                }
+                ul {
+                    margin-bottom: 0
+                    li {
+                        font-size: 14px;
+
+                    }
+                }
+                button {
+                    width: 100%;
+                }
+                
+            }
+            
+            .pro {
+                grid-column: 1/ span 2;
+                max-width: 100%;
+
+                
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    
+                    li {
+                        margin-bottom: 25px;
+                        &:nth-child(odd) {
+                            margin-right: 20px;
+                        }
+                        &:nth-child(even) {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
