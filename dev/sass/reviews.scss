@@ -1,0 +1,75 @@
+.reviews {
+    margin: 40px auto 100px;
+    h2 {
+        color: #36353C;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .reviews-slider {
+        padding: 60px 15px 30px;
+        position: relative;
+        .slide {
+            display: flex !important;
+            padding: 30px 25px 50px;
+            border-radius: 40px;
+            background: #FFF;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+            &-img {
+                margin-right: 25px;
+                border-radius: 70px;
+                min-width: 80px;
+                max-height: 80px;
+                overflow: hidden;
+                background-color: #2FA84F;
+                img {
+                    width: 100%;
+                }
+            }
+            &-text {
+                color: #63656B;
+                h5 {
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+            }
+        }
+        .slick-arrow {
+            font-size: 0;
+            background-image: url(assets/img/slide-arrow.png);
+            height: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            position: absolute;
+            background-color: hsla(228, 13%, 78%, 0.2);
+            border: none;
+            padding: 35px;
+            right: 15px;
+            z-index: 1;
+            cursor: pointer;
+            &:hover {
+                background-color: hsla(231, 6%, 55%, 0.2);
+            }
+        }
+    
+        button.slick-next.slick-arrow {
+            bottom: -49px;
+            right: 92px;
+            transform: rotate(180deg);
+
+        }
+        
+        button.slick-prev.slick-arrow {
+            bottom: -49px;
+        }
+
+    }
+}

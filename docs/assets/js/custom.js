@@ -2,12 +2,12 @@ $(document).ready(function () {
   $('.slider-secret-block').slick({
     dots: false,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     speed: 300,
     autoplaySpeed: 4000,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -29,6 +29,18 @@ $(document).ready(function () {
       },
       
     ]
+    
+  });
+
+  $('.reviews-slider').slick({
+    dots: false,
+    arrows: true,
+    autoplay: false,
+    infinite: true,
+    speed: 300,
+    autoplaySpeed: 4000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     
   });
 
