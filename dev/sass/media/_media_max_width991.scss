@@ -231,10 +231,9 @@
                     }
                 }
                 ul {
-                    margin-bottom: 0
+                    margin-bottom: 0;
                     li {
                         font-size: 14px;
-
                     }
                 }
                 button {
@@ -261,6 +260,22 @@
                             margin-left: 20px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+
+    .other_tariff {
+        &-card {
+            .card-footer {
+                h5 {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                .btn {
+                    max-width: 200px;
+                    font-size: 14px;
                 }
             }
         }

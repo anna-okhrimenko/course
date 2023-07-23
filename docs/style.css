@@ -795,6 +795,9 @@ header .header-mobile_modal .modal-close {
   font-weight: 500;
   text-transform: uppercase;
 }
+.other_tariff-card .card-body ul {
+  margin-bottom: 30px;
+}
 .other_tariff-card .card-body ul li {
   margin-bottom: 15px;
   font-size: 16px;
@@ -805,6 +808,7 @@ header .header-mobile_modal .modal-close {
 .other_tariff-card .card-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 50px 43px;
 }
 .other_tariff-card .card-footer h5 {
@@ -976,6 +980,29 @@ header .header-mobile_modal .modal-close {
   }
   .taryf-block .taryf-card ul li {
     margin-bottom: 25px;
+  }
+  .other_tariff {
+    gap: 20px;
+  }
+  .other_tariff-card .card-title {
+    padding: 26px 20px 26px 25px;
+  }
+  .other_tariff-card .card-title h4 {
+    font-size: 24px;
+  }
+  .other_tariff-card .card-body {
+    padding: 30px 26px 30px 26px;
+  }
+  .other_tariff-card .card-footer {
+    margin-top: -20px;
+    padding: 0 30px 30px;
+  }
+  .other_tariff-card .card-footer h5 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .other_tariff-card .card-footer .btn {
+    padding: 14px 69px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1172,8 +1199,10 @@ header .header-mobile_modal .modal-close {
     margin-bottom: 25px;
   }
   .taryf-block .taryf-card ul {
-    margin-bottom: 0 li;
-    margin-bottom-font-size: 14px;
+    margin-bottom: 0;
+  }
+  .taryf-block .taryf-card ul li {
+    font-size: 14px;
   }
   .taryf-block .taryf-card button {
     width: 100%;
@@ -1194,6 +1223,14 @@ header .header-mobile_modal .modal-close {
   }
   .taryf-block .pro ul li:nth-child(even) {
     margin-left: 20px;
+  }
+  .other_tariff-card .card-footer h5 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .other_tariff-card .card-footer .btn {
+    max-width: 200px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1376,6 +1413,45 @@ header .header-mobile_modal .modal-close {
   .teacher-course .single-teacher .teacher-info .teacher-mob-img {
     display: block;
   }
+  .taryf {
+    margin-bottom: 0;
+  }
+  .taryf h2 {
+    font-size: 18px;
+  }
+  .taryf-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .taryf-block .taryf-card ul li {
+    margin-bottom: 25px;
+  }
+  .taryf-block .taryf-card ul li:last-child {
+    margin-bottom: 0;
+  }
+  .taryf-block .pro {
+    display: flex;
+    flex-direction: column;
+    max-width: 366px;
+  }
+  .taryf-block .pro ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .taryf-block .pro ul li {
+    margin-bottom: 25px;
+  }
+  .taryf-block .pro ul li:nth-child(odd) {
+    margin-right: 0;
+  }
+  .taryf-block .pro ul li:nth-child(even) {
+    margin-left: 0;
+  }
+  .other_tariff {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 576px) {
   .btn.btn-primary {
@@ -1457,6 +1533,32 @@ header .header-mobile_modal .modal-close {
   }
   .for-whom_course-banner .banner-img {
     display: none;
+  }
+  .other_tariff-card {
+    border-radius: 20px;
+  }
+  .other_tariff-card .card-title {
+    padding: 26px 15px;
+  }
+  .other_tariff-card .card-title h4 {
+    font-size: 20px;
+  }
+  .other_tariff-card .card-body {
+    padding: 30px 30px;
+  }
+  .other_tariff-card .card-body h6 {
+    font-size: 14px;
+  }
+  .other_tariff-card .card-body ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .other_tariff-card .card-footer {
+    padding: 0 26px 15px;
+    margin-top: -30px;
+  }
+  .other_tariff-card .card-footer h5 {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

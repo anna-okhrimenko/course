@@ -154,6 +154,36 @@
             }
         }
     }
+
+
+    .other_tariff {
+        gap: 20px;
+        &-card {
+            .card-title {
+                padding: 26px 20px 26px 25px;
+                h4 {
+                    font-size: 24px;
+                }
+            }
+            .card-body {
+                padding: 30px 26px 30px 26px;
+            }
+            .card-footer {
+                margin-top: -20px;
+                padding: 0 30px 30px;
+                h5 {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                .btn {
+                    padding: 14px 69px;
+                }
+            }
+        }
+    }
+
+
+    
 }
 
 
