@@ -836,6 +836,7 @@ header .header-mobile_modal .modal-close {
 }
 .reviews .reviews-slider .slide {
   display: flex !important;
+  min-height: 250px;
   padding: 30px 25px 50px;
   border-radius: 40px;
   background: #FFF;
@@ -854,6 +855,9 @@ header .header-mobile_modal .modal-close {
 }
 .reviews .reviews-slider .slide-text {
   color: #63656B;
+}
+.reviews .reviews-slider .slide-text .slide-title img {
+  display: none;
 }
 .reviews .reviews-slider .slide-text h5 {
   margin-bottom: 15px;
@@ -1304,6 +1308,9 @@ header .header-mobile_modal .modal-close {
     max-width: 200px;
     font-size: 14px;
   }
+  .reviews .reviews-slider {
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   .secret-block {
@@ -1543,7 +1550,7 @@ header .header-mobile_modal .modal-close {
   .secret-block .text-side {
     height: 120px;
   }
-  .slick-list {
+  .secret-block .slick-list {
     max-width: 336px;
   }
   .insta-busines .small-container .title {
@@ -1631,6 +1638,33 @@ header .header-mobile_modal .modal-close {
   }
   .other_tariff-card .card-footer h5 {
     font-size: 18px;
+  }
+  .reviews h2 {
+    font-size: 18px;
+  }
+  .reviews .reviews-slider {
+    padding: 20px 0 0 0;
+  }
+  .reviews .reviews-slider .slide {
+    padding: 20px;
+  }
+  .reviews .reviews-slider .slide-img {
+    display: none;
+  }
+  .reviews .reviews-slider .slide-text h5 {
+    font-size: 16px;
+  }
+  .reviews .reviews-slider .slide-text p {
+    font-size: 14px;
+  }
+  .reviews .reviews-slider .slide-text .slide-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .reviews .reviews-slider .slide-text .slide-title img {
+    display: block;
+    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -41,6 +41,26 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '30px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 1
+        }
+      }
+    ]
+
     
   });
 

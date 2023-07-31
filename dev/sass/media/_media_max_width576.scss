@@ -19,10 +19,10 @@
         .text-side {
             height: 120px;
         }
-    }
-    .slick-list {
-        max-width: 336px;
-
+        .slick-list {
+            max-width: 336px;
+    
+        }
     }
 
     .insta-busines {
@@ -128,6 +128,38 @@
                     font-size: 18px;
                 }
                 
+            }
+        }
+    }
+
+    .reviews {
+        h2 {
+            font-size: 18px;
+        }
+        .reviews-slider {
+            padding: 20px 0 0 0;
+            .slide {
+                padding: 20px;
+                &-img {
+                    display: none;
+                }
+                &-text {
+                    h5 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    .slide-title {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        img {
+                            display: block;
+                            margin-right: 20px;
+                        }
+                    }
+                }
             }
         }
     }
