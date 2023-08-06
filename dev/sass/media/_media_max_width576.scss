@@ -133,6 +133,7 @@
     }
 
     .reviews {
+        margin-bottom: 40px;
         h2 {
             font-size: 18px;
         }
@@ -161,6 +162,32 @@
                     }
                 }
             }
+        }
+    }
+
+
+    .faq {
+        h2 {
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+    
+        .acordion-item {
+            padding: 25px 0;
+        
+            .acordion-title {
+                padding: 0 20px 0 20px;
+                font-size: 16px;
+            }
+        
+            &.active .acordion-content {
+                padding: 20px 50px 0 50px;
+            }
+        
+            .first_accord-btn {
+                margin-right: 15px;
+            }
+           
         }
     }
 }

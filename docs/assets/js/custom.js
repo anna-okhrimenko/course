@@ -131,3 +131,15 @@ modalBtnOpen.addEventListener('click', () => {
 modalBtnClose.addEventListener('click', () => {
   modal.classList.remove('open');
 });
+
+//Accordion
+
+const installAccordion = function() {
+  const acordion = document.querySelectorAll('.acordion-title');
+  acordion.forEach(function (title) {
+      title.onclick = function() {
+          title.closest('.acordion-item').classList.toggle('active');
+      }
+  });
+}
+installAccordion()

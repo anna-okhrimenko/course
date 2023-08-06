@@ -83,4 +83,46 @@
     }
 
     
+    .faq {
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    
+        .acordion {
+            box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.10) , 0 -5px 5px -5px rgba(0, 0, 0, 0.10);
+            padding: 0;
+        }
+    
+        .acordion-item {
+            padding: 30px 0;
+        
+            .acordion-title {
+                padding: 0 30px 0 30px;
+                font-size: 20px;
+                line-height: normal;
+            }
+        
+            .acordion-content {
+                padding: 0 37px 0 0;
+                font-size: 14px;
+            }
+            
+            &.active .acordion-content {
+                padding: 20px 58px 0 65px;;
+                line-height: 20px;
+            }
+        
+            .first_accord-btn {
+                margin-right: 25px;
+                mask: url(assets/img/li-dots.svg) no-repeat contain;
+                -webkit-mask: url(assets/img/li-dots.svg) center / 20px no-repeat;
+            }
+            
+            .accord-btn {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 }
