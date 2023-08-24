@@ -190,5 +190,15 @@
            
         }
     }
+
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        & > div {
+            width: 100%;
+        }
+    }
 }
 

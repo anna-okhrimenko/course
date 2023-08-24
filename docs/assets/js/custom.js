@@ -43,7 +43,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           arrows: true,
           centerMode: true,
