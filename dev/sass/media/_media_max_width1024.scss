@@ -14,20 +14,18 @@
 
     //header//
 
-    header {
-        .header-container {
-            padding: 0 45px;
-            .header-nav {
-                gap: 50px;
-                a {
-                    font-size: 15px;
-                    line-height: 20px;
-                   
-                }
+    .header-container {
+        padding: 0 45px;
+        .header-nav {
+            gap: 50px;
+            a {
+                font-size: 15px;
+                line-height: 20px;
+                
             }
         }
     }
-
+    
     //first-screen//
 
     .first-screen {

@@ -195,4 +195,15 @@
         flex-direction: column;
         align-items: center;
     }
+
+    footer {
+        .header-container {
+            flex-direction: column;
+            align-items: center;
+            .header-logo {
+                margin-right: 0;
+                margin-bottom: 25px;
+            }
+        }
+    }
 }
