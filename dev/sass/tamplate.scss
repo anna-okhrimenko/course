@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
     ::selection {
         color: #3215db;
         background-color: #ebf04e;
