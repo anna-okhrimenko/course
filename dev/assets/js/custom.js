@@ -118,6 +118,8 @@ $(document).ready(function () {
     }); 
   };
 
+  $('.phone-mask').mask('+38(000)00-00-000');
+
 });
   
 // modal 
